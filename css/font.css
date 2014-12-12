@@ -1,0 +1,46 @@
+/* reset */
+div, ul, li {margin: 0; padding: 0; }
+ul,li {list-style: none;}
+.clearfix {zoom: 1;}
+.clearfix:after {content: ""; display: block; clear:both;}
+/* 利用css3的font-face引入字体图标 */
+@font-face {
+    font-family: "cx-font";
+    src: url("../image/icomoon.eot"); /* 针对IE9单独处理 */
+    src: url("../image/icomoon.eot?#iefix") format("embedded-opentype"),
+         url("../image/icomoon.woff") format("woff"),
+         url("../image/icomoon.ttf") format("truetype"),
+         url("../image/icomoon.svg") format("svg");
+    font-style: normal;
+    font-weight: normal;
+}
+.cx-icon {
+    font-family: "cx-font";
+    font-size: 56px;
+    -webkit-font-smoothing: antialiased; /* fix chrome 锯齿 */
+    -moz-osx-font-smoothing: grayscal; /* fix ff 锯齿 */
+}
+p{
+    padding-top: 40px;
+    font: 30px/40px "Microsoft Yahei";
+    text-align: center;
+}
+ul{
+    margin-left: 240px;
+}
+li {
+    float: left;
+    padding: 5px;
+    margin-right: 20px;
+}
+li span{
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+}
+span:hover {
+    color: red;
+    cursor: pointer;
+    font-size:90px;
+}
+
